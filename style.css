@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  /* background-color: #F0DAD2; */
+}
+header {
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+nav > img {
+width: 100px;
+height: 80px;
+padding-top: 10px;
+border-radius: 50%;
+}
+.nav-link > ul {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.nav-link > ul >li {
+padding: 40px 20px;
+list-style-type: none;
+}
+.nav-link > ul > li:hover {
+  transform: scale(1.1);
+}
+.nav-link > ul > li, a {
+text-decoration: none;
+color: #303073;
+}
+
+.fa {
+  padding: 0px 5px;
+}
+.btn {
+/* background-color: white; */
+color: black;
+border: none;
+outline: 1px solid #303073;
+/* border-radius: 10px; */
+margin: 30px 0px;
+padding: 5px 25px;
+}
+.btn:hover {
+  transform: scale(1.1);
+  /* background: linear-gradient(35deg,#ccffff,#ffcccc); */
+  /* border: 1px solid black; */
+  color: black;
+} 
+.text-3 {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 55%;
+  width: 700px;
+  margin-left: 40px;
+}
+.text-2 {
+  position: absolute;
+  font-size: 3rem;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  border: 5px solid white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.text-1 {
+  position: absolute;
+  font-size: 3.5rem;
+  color: white;
+  left: 0px;
+  bottom: 45%;
+  width: 700px;
+  margin-left: 40px;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+
+}
+
+.mySlides {
+  display: none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.section-1 > h2 {
+  padding: 20px;
+  text-align: center;
+}
+.wof {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.wof-1, .wof-2, .wof-3 {
+  margin: 10px 0px;
+  width: 33%;
+}
+.wof-1, .wof-2, .wof-3 > h3 {
+  text-align: center;
+}
+.wof-1, .wof-2, .wof-3 > p {
+  line-height: 1.5em;
+  padding: 0px 25px;
+  text-align: center;
+  word-spacing: .2em;
+}
+.section-2 {
+  background-color: #303073;
+  color: white;
+  height: 350px;
+  position: relative;
+}
+.sec-2-heading > h1 {
+  font-size: 40px;
+  font-weight: 200;
+  width: 270px;
+  padding: 20px 0px;
+  padding-left: 32px;
+  margin:  auto;
+}
+.sec-2-sec {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-2-1, .sec-2-2, .sec-2-3 {
+  text-align: center;
+  line-height: 1.9em;
+  margin-top: 40px;
+}
+.sec-2-btn {
+  position: absolute;
+  background-color: #AEC9D1;
+  padding: 15px;
+  margin-top: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  border: none;
+}
+.sec-img {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.sec-3-img > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0px 25px;
+}
+.sec-3-heading > h1 {
+  font-size: 40px;
+  font-weight: 200;
+  width: 370px;
+  padding: 20px 0px;
+  padding-left: 32px;
+  margin:  auto;
+}
+.sec-3-img > h3 {
+  text-align: center;
+  padding: 10px;
+}
+footer {
+  background-color: #303073;
+  /* background-image: linear-gradient(-20deg,#aec9d1,#303073); */
+  color: white;
+}
+.foot-1 {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.foot-1 > div > h2 {
+  padding: 15px 0px;
+}
+.foot-1 > div > p {
+  padding: 15px 0px;
+}
+.foot-1 > div > p > i {
+  padding: 0px 10px;
+}
+.foot-2 {
+  text-align: center;
+  /* background-color: #AEC9D1; */
+  background-image: linear-gradient(-10deg,#AEC9D1,#303073);
+  height: 80px;
+}
+.foot-2 > p {
+  padding: 30px 0px;
+}
